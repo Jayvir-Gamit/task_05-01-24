@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+        }
+        img{
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./allu_arjun_about.jpg" alt="">
+        <h3>Lorem, ipsum.</h3>
+        <h5 style="margin: 0px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, odit!</h5>
+        <button onclick="change()" style="margin: 20px 0px; padding: 10px;">Click Me</button>
+    </div>
+</body>
+<script>
+    function change() {
+        document.querySelector('img').src='./allubg1.jpg'
+        document.querySelector('img').style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
+        document.querySelector('h3').innerText = "Jayvir Gamit"
+        document.querySelector('h3').style.color="blue"
+        document.querySelector('h3').style.fontFamily="cursive"
+        document.querySelector('h3').style.fontWeight="bolt"
+        document.querySelector('h5').innerText = "I am Jayvir Gamit from Surat. I want to be Web Developer.";
+        document.querySelector('h5').style.color="green"
+        document.querySelector('h5').style.fontFamily="cursive"
+        document.querySelector('h5').style.fontWeight="bolt"
+        document.querySelector('button').style.borderRadius="10px"
+    }
+</script>
+</html>
